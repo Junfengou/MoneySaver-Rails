@@ -20,12 +20,14 @@
     display: flex;
     /*justify-content: space-between;*/
     align-content: center;
+    background-color: #F4F4F4;
 }
 
 .nav-section {
     /*border: solid 1px red;*/
     max-width: 1200px;
     min-width: 20%;
+    background-color: white;
 }
 
 .content-section {

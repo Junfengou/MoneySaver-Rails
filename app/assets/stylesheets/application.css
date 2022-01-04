@@ -29,6 +29,6 @@
 }
 
 .content-section {
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     min-width: 80%;
 }

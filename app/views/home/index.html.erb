@@ -1,7 +1,4 @@
 <div class="home-wrapper">
-  <h1>Welcome to the budget app</h1>
-  <h3><%= link_to "Sign Up", new_user_registration_path %></h3>
-  <h3><%= link_to "Sign In", new_user_session_path%></h3>
-  <h3><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></h3>
+  <%= render "/home/authentication_bar" %>
 <!--  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>-->
 </div>

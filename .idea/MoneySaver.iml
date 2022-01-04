@@ -180,6 +180,28 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.16)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/spec" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/ext" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/bcrypt-3.1.16/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="bindex (vbundled(0.8.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -342,6 +364,24 @@
         <JAVADOC />
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/crass-1.0.6/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="devise (vbundled(4.8.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/devise-4.8.1/app" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/devise-4.8.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/devise-4.8.1/config" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/devise-4.8.1/app" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/devise-4.8.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/devise-4.8.1/config" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -663,6 +703,28 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="orm_adapter (vbundled(0.5.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/gemfiles" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/gemfiles" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/orm_adapter-0.5.0/gemfiles" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="pg (vbundled(1.2.3)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -844,6 +906,31 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="rake (vbundled(12.3.3)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/doc" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/exe" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/doc" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/exe" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/bin" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/doc" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rake-12.3.3/exe" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="rb-fsevent (vbundled(0.11.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -882,6 +969,20 @@
         <excluded>
           <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/rb-inotify-0.10.1/spec" />
         </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="responders (vbundled(3.0.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/responders-3.0.1/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/responders-3.0.1/lib" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -1158,6 +1259,25 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="warden (vbundled(1.2.9)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/warden-1.2.9/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/warden-1.2.9/.github" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/warden-1.2.9/lib" />
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/warden-1.2.9/.github" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/ruby/2.6.0/gems/warden-1.2.9/.github" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="web-console (vbundled(3.7.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -1204,7 +1324,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="rake (v12.3.3, ruby-2.6.8-p205) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

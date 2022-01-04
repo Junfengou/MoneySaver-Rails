@@ -14,8 +14,16 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+<!--    <p class="notice"><%#= notice %></p>-->
+<!--    <p class="alert"><%#= alert %></p>-->
+    <div class="application-wrapper">
+      <div class="nav-section">
+        <%= render "layouts/nav/navbar" %>
+      </div>
+      <div class="content-section">
+        <%= yield %>
+      </div>
+    </div>
+
   </body>
 </html>

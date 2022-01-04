@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+.application-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-content: center;
+}
+
+.nav-section {
+    /*border: solid 1px red;*/
+    max-width: 1200px;
+    min-width: 20%;
+}
+
+.content-section {
+    border: solid 1px blue;
+    min-width: 80%;
+}

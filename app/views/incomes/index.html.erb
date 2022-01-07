@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Incomes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Checkone</th>
+      <th>Checktwo</th>
+      <th>Checkthree</th>
+      <th>Checkfour</th>
+      <th>Checkfive</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @incomes.each do |income| %>
+      <tr>
+        <td><%= income.checkone %></td>
+        <td><%= income.checktwo %></td>
+        <td><%= income.checkthree %></td>
+        <td><%= income.checkfour %></td>
+        <td><%= income.checkfive %></td>
+        <td><%= link_to 'Show', income %></td>
+        <td><%= link_to 'Edit', edit_income_path(income) %></td>
+        <td><%= link_to 'Destroy', income, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Income', new_income_path %>

@@ -10,10 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_04_025405) do
+ActiveRecord::Schema.define(version: 2022_01_05_150229) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "debts", force: :cascade do |t|
+    t.integer "creditcard"
+    t.integer "car"
+    t.integer "studentloan"
+    t.integer "medical"
+    t.integer "personal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "expenses", force: :cascade do |t|
+    t.integer "mortgage"
+    t.integer "water"
+    t.integer "gas"
+    t.integer "eletricity"
+    t.integer "cable"
+    t.integer "trash"
+    t.integer "gasoline"
+    t.integer "maintenance"
+    t.integer "groceries"
+    t.integer "restaurant"
+    t.integer "clothing"
+    t.integer "phone"
+    t.integer "fun"
+    t.integer "cosmetic"
+    t.integer "subscription"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "givings", force: :cascade do |t|
+    t.integer "church"
+    t.integer "charity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "incomes", force: :cascade do |t|
+    t.integer "checkone"
+    t.integer "checktwo"
+    t.integer "checkthree"
+    t.integer "checkfour"
+    t.integer "checkfive"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

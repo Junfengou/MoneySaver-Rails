@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Expenses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mortgage</th>
+      <th>Water</th>
+      <th>Gas</th>
+      <th>Eletricity</th>
+      <th>Cable</th>
+      <th>Trash</th>
+      <th>Gasoline</th>
+      <th>Maintenance</th>
+      <th>Groceries</th>
+      <th>Restaurant</th>
+      <th>Clothing</th>
+      <th>Phone</th>
+      <th>Fun</th>
+      <th>Cosmetic</th>
+      <th>Subscription</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expenses.each do |expense| %>
+      <tr>
+        <td><%= expense.mortgage %></td>
+        <td><%= expense.water %></td>
+        <td><%= expense.gas %></td>
+        <td><%= expense.eletricity %></td>
+        <td><%= expense.cable %></td>
+        <td><%= expense.trash %></td>
+        <td><%= expense.gasoline %></td>
+        <td><%= expense.maintenance %></td>
+        <td><%= expense.groceries %></td>
+        <td><%= expense.restaurant %></td>
+        <td><%= expense.clothing %></td>
+        <td><%= expense.phone %></td>
+        <td><%= expense.fun %></td>
+        <td><%= expense.cosmetic %></td>
+        <td><%= expense.subscription %></td>
+        <td><%= link_to 'Show', expense %></td>
+        <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+        <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Expense', new_expense_path %>

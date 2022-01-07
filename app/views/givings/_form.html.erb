@@ -1,0 +1,27 @@
+<%= form_with(model: giving, local: true) do |form| %>
+  <% if giving.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(giving.errors.count, "error") %> prohibited this giving from being saved:</h2>
+
+      <ul>
+      <% giving.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :church %>
+    <%= form.number_field :church %>
+  </div>
+
+  <div class="field">
+    <%= form.label :charity %>
+    <%= form.number_field :charity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

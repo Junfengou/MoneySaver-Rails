@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_10_032905) do
+ActiveRecord::Schema.define(version: 2022_01_10_042350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,8 @@ ActiveRecord::Schema.define(version: 2022_01_10_032905) do
     t.integer "personal"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "budget_id"
+    t.index ["budget_id"], name: "index_debts_on_budget_id"
   end
 
   create_table "expenses", force: :cascade do |t|
@@ -60,6 +62,8 @@ ActiveRecord::Schema.define(version: 2022_01_10_032905) do
     t.integer "subscription"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "budget_id"
+    t.index ["budget_id"], name: "index_expenses_on_budget_id"
   end
 
   create_table "givings", force: :cascade do |t|
@@ -67,6 +71,8 @@ ActiveRecord::Schema.define(version: 2022_01_10_032905) do
     t.integer "charity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "budget_id"
+    t.index ["budget_id"], name: "index_givings_on_budget_id"
   end
 
   create_table "incomes", force: :cascade do |t|
@@ -77,6 +83,8 @@ ActiveRecord::Schema.define(version: 2022_01_10_032905) do
     t.integer "checkfive"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "budget_id"
+    t.index ["budget_id"], name: "index_incomes_on_budget_id"
   end
 
   create_table "users", force: :cascade do |t|

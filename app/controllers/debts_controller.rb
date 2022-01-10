@@ -13,6 +13,7 @@ class DebtsController < ApplicationController
   # GET /debts/new
   def new
     @debt = Debt.new
+    @param = params[:budget_id]
   end
 
   # GET /debts/1/edit

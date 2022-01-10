@@ -10,7 +10,13 @@
   <%= @budget.description %>
 </p>
 
+<strong>ID:</strong>
+  <%= @budget.id %>
+</p>
+
+
 
 
 <%= link_to 'Edit', edit_budget_path(@budget) %> |
 <%= link_to 'Back', budgets_path %>
+<%= link_to 'Create Debt', budget_debt_path(@budget) %>

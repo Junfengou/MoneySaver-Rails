@@ -65,6 +65,6 @@ class ExpensesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def expense_params
-      params.require(:expense).permit(:mortgage, :water, :gas, :eletricity, :cable, :trash, :gasoline, :maintenance, :groceries, :restaurant, :clothing, :phone, :fun, :cosmetic, :subscription)
+      params.require(:expense).permit(:mortgage, :water, :gas, :eletricity, :cable, :trash, :gasoline, :maintenance, :groceries, :restaurant, :clothing, :phone, :fun, :cosmetic, :subscription, :budget_id)
     end
 end

@@ -86,6 +86,10 @@
     <%= form.number_field :subscription %>
   </div>
 
+  <div class="field form-group">
+    <%= form.number_field :budget_id, class:"form-control", value: params[:budget_id], type: :hidden %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

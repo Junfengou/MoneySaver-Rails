@@ -65,6 +65,6 @@ class GivingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def giving_params
-      params.require(:giving).permit(:church, :charity)
+      params.require(:giving).permit(:church, :charity, :budget_id)
     end
 end

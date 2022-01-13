@@ -32,12 +32,13 @@
             align-items: center;
         }
     }
-    .field-input {
-        border-style: none;
-        outline:none;
-    }
+
 }
 
+.field-input {
+    border-style: none;
+    outline:none;
+}
 .action-button {
     //border: solid 2px red;
     padding: 0.5rem 1.2rem;

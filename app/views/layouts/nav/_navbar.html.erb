@@ -6,7 +6,7 @@
   </div>
   <div class="nav-content">
     <%= link_to "Home", root_path %>
-    <%= link_to "Budget List", root_path %>
+    <%= link_to "Budget List", budgets_path %>
     <% if user_signed_in? %>
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
     <% else %>
@@ -15,3 +15,4 @@
     <% end %>
   </div>
 </div>
+

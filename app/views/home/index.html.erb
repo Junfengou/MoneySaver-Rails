@@ -12,9 +12,34 @@
 
 <!--    <h3>Debts</h3>-->
 <!--    <p><%#= link_to "Navigate to debt", debts_path %></p>-->
-
-    <h3>Budgets</h3>
-    <p><%= link_to "Navigate to budgets", budgets_path %></p>
   <% end %>
+  <div class="home-banner">
+    <div class="banner-text">
+      <h5>A Budget is telling your money where to go instead of wondering where it went</h5>
+      <p>John C. Maxwell</p>
+    </div>
+  </div>
+
+  <div class="home-info">
+    <div class="info-header">
+<!--      <div class="highlighter" ></div>-->
+      <h5 style="margin-bottom: 1rem;">What are you waiting for?</h5>
+      <% if user_signed_in? %>
+        <button class="action-button" type="button">
+          <%= link_to "Create your budget today!", budgets_path %>
+        </button>
+      <% else %>
+        <button class="action-button" type="button">
+          <%= link_to "Sign up today!", new_user_registration_path %>
+        </button>
+      <% end %>
+    </div>
+
+    <div class="info-bubbles">
+      <%= render partial: "info_bubble", locals: {title: "The cycle ends here!", description: "Start planning today and say goodbye to your old paycheck to paycheck lifestyle!"} %>
+      <%= render partial: "info_bubble", locals: {title: "Expect the unexpected", description: "Calculate your monthly savings accordingly and You will never have to worry about the unexpected expenses!"} %>
+      <%= render partial: "info_bubble", locals: {title: "Lifelong habit", description: "Saving is not just able building up a chunky bank account. It is about building a good spending habit and a healthy lifestyle with money"} %>
+    </div>
+  </div>
 <!--  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>-->
 </div>

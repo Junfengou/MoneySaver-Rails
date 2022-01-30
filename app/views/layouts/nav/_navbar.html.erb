@@ -1,13 +1,14 @@
 <div class="nav-wrapper">
   <div class="image-container">
     <a href="/">
-      <%= image_tag('logo.png', id: 'money-saver-header-rev', border: '0', height: '80px', alt: 'Money Saver', title: 'Money Saver') %>
+      <%= image_tag('logo-main.png', id: 'money-saver-header-rev', border: '0', height: '80px', alt: 'Money Saver', title: 'Money Saver') %>
     </a>
   </div>
   <div class="nav-content">
     <%= link_to "Home", root_path %>
     <%= link_to "Budget List", budgets_path %>
     <% if user_signed_in? %>
+      <%= link_to "Create New Budget", new_budget_path %>
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
     <% else %>
       <%= link_to "Sign Up", new_user_registration_path %>
